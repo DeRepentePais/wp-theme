@@ -1,0 +1,189 @@
+/*!
+Theme Name: De repente pais
+Theme URI: http://underscores.me/
+Author: Rodrigo Zani
+Author URI: https://github.com/rzani
+Description: Tema do site derepentepais.com.br
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: derepentepais
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+De repente pais is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Grid
+# Typography
+# Elements
+# Forms
+# Navigation
+        ## Links
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+        ## Asides
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+@import "variables/variables";
+@import "mixins/mixins-master";
+@import "util/util";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+@import "layout/content-sidebar";
+
+/*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
+@import "grid/grid";
+
+/*--------------------------------------------------------------
+# Shadows
+--------------------------------------------------------------*/
+@import "shadows/shadows";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/fields";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Parallax
+--------------------------------------------------------------*/
+@import "parallax/parallax";
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+@import "components/navbar";
+
+
+/*--------------------------------------------------------------
+# Customization
+--------------------------------------------------------------*/
+//remove
+#content{
+    min-height: 800px;
+}
+
+.site-footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
+}
+
+
+// GALLERY
+#news-feed{
+    margin-top: 30px;
+    
+    /*margin: 30px;*/
+    .col {
+        padding: 0px;
+        line-height: 0;}
+}
+#news-feed .new { margin: 5px; }
+#news-feed .new {
+    a img{ width: 100%; }
+    .meta{
+        position: absolute;
+        padding: 15px;
+        bottom: 0;
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.15;
+        color: #fff;
+        background-color: $color__secondary;
+        background-color: rgba($color__secondary, 0.7);
+        .category{
+            font-variant: small-caps;
+            font-size: 0.9em;
+            padding-top: 10px; }
+    }
+}
+@media #{$grid__medium-and-up} {
+    #news-feed .new {margin: 0px;}
+}
+

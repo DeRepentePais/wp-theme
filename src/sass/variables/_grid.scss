@@ -1,0 +1,23 @@
+// Media Query Ranges
+$grid__small-screen-up: 601px !default;
+$grid__medium-screen-up: 993px !default;
+$grid__large-screen-up: 1201px !default;
+$grid__small-screen: 600px !default;
+$grid__medium-screen: 992px !default;
+$grid__large-screen: 1200px !default;
+
+$grid__medium-and-up: "only screen and (min-width : #{$grid__small-screen-up})" !default;
+$grid__large-and-up: "only screen and (min-width : #{$grid__medium-screen-up})" !default;
+$grid__small-and-down: "only screen and (max-width : #{$grid__small-screen})" !default;
+$grid__medium-and-down: "only screen and (max-width : #{$grid__medium-screen})" !default;
+$grid__medium-only: "only screen and (min-width : #{$grid__small-screen-up}) and (max-width : #{$grid__medium-screen})" !default;
+
+// Grid
+$grid__container-width-default: 90%;
+$grid__container-width-medium-and-up: 85%;
+$grid__container-width-large-and-up: 90%;
+
+$grid__num-cols: 12 !default;
+$grid__gutter-width: 1.5rem !default;
+$grid__element-top-margin: $grid__gutter-width/3 !default;
+$grid__element-bottom-margin: ($grid__gutter-width*2)/3 !default;
